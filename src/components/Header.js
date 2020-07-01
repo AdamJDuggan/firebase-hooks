@@ -9,7 +9,7 @@ function Header() {
       <NavLink to="/" className="header-title">
         Hooks News
       </NavLink>
-      <NavLink to="/" className="header-link">
+      <NavLink to="/create" className="header-link">
         New
       </NavLink>
       <div className="divider">|</div>
