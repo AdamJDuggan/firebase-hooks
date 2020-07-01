@@ -35,7 +35,7 @@ function CreateLink(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-column mt-3">
+    <form onSubmit={handleCreateLink} className="flex flex-column mt-3">
       <input
         name="description"
         onChange={handleChange}
@@ -52,7 +52,7 @@ function CreateLink(props) {
         values={values.url}
         placeholder="This the url for the link"
         autoComplete="off"
-        type="text"
+        type="url"
         className={errors.url && "error-input"}
       />
       {errors.url && <p className="error-text">{errors.url}</p>}
